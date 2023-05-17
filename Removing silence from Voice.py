@@ -3,8 +3,7 @@ from pydub.silence import split_on_silence
 
 # load audio file
 input_file_path = 'C:/Users/LENOVO/Desktop/RemoveNoise/RemoveNoise/Removing-silence-from-Voice/Rec.wav'
-audio_file = AudioSegment.from_wav(
-    "")
+audio_file = AudioSegment.from_wav(input_file_path)
 
 # split audio on silence
 chunks = split_on_silence(audio_file, min_silence_len=500, silence_thresh=-40)
