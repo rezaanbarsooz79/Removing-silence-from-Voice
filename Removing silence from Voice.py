@@ -6,7 +6,7 @@ input_file_path = 'C:/Users/LENOVO/Desktop/RemoveNoise/RemoveNoise/Removing-sile
 audio_file = AudioSegment.from_wav(input_file_path)
 
 # split audio on silence
-chunks = split_on_silence(audio_file, min_silence_len=500, silence_thresh=-40)
+chunks = split_on_silence(audio_file, min_silence_len=500, silence_thresh=-42)
 
 # combine non-silent chunks
 combined_audio = AudioSegment.empty()
